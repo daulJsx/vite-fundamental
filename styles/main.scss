@@ -1,0 +1,13 @@
+@use "variables";
+@use "mixins";
+@use "global";
+
+// Komponen atau container
+.container {
+  @include mixins.flex-center;
+  background-color: variables.$background-color;
+
+  h1 {
+    color: variables.$text-color;
+  }
+}
