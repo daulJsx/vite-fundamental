@@ -10,4 +10,8 @@
   h1 {
     color: variables.$text-color;
   }
+
+  a {
+    @include mixins.link-style;
+  }
 }

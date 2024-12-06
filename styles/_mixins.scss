@@ -4,4 +4,31 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+// _mixins.scss
+@mixin link-style(
+  $color: #007bff,
+  $hover-color: darken($color, 15%),
+  $font-size: 1rem,
+  $font-weight: 500,
+  $text-decoration: none
+) {
+  color: $color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  text-decoration: $text-decoration;
+  transition: color 0.3s ease;
+
+  &:hover,
+  &:focus {
+    color: $hover-color;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: darken($hover-color, 10%);
+  }
 }

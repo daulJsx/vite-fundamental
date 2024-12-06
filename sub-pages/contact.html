@@ -3,23 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite | Main Page</title>
+    <title>Vite | Contact Page</title>
     <style>
-      @import url("./styles/main.scss");
+      @import url("../styles/main.scss");
     </style>
   </head>
   <body>
     <div class="container">
+      <a href="/">Home</a>
       <h1 id="title"></h1>
-
-      <a href="./sub-pages/blog.html">Blog</a>
-      <a href="./sub-pages/contact.html">Contact</a>
     </div>
 
     <script type="module">
-      import { pageTitle } from "./main.js";
+      import { pageTitle } from "../main.js";
 
-      pageTitle("Main");
+      pageTitle("Contact");
     </script>
   </body>
 </html>
