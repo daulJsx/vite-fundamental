@@ -1,3 +1,5 @@
+@use "sass:color";
+
 // centering
 @mixin flex-center {
   display: flex;
@@ -11,7 +13,7 @@
 // _mixins.scss
 @mixin link-style(
   $color: #007bff,
-  $hover-color: darken($color, 15%),
+  $hover-color: color.adjust($color, $lightness: -10%),
   $font-size: 1rem,
   $font-weight: 500,
   $text-decoration: none
@@ -29,6 +31,6 @@
   }
 
   &:active {
-    color: darken($hover-color, 10%);
+    color: color.scale($color, $lightness: -25%);
   }
 }
