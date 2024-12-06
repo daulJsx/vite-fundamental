@@ -6,6 +6,12 @@
     <title>Vite | Fundamentals</title>
   </head>
   <body>
-    <h1>Hello Vite, This is my first page using vite</h1>
+    <h1 id="title"></h1>
+
+    <script type="module">
+      import { pageGreeting } from "./main.js";
+
+      pageGreeting("Daffa");
+    </script>
   </body>
 </html>
